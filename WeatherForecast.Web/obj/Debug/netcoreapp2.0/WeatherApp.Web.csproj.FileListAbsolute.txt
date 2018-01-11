@@ -1,0 +1,11 @@
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\bin\Debug\netcoreapp2.0\WeatherApp.Web.deps.json
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\bin\Debug\netcoreapp2.0\WeatherApp.Web.runtimeconfig.json
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\bin\Debug\netcoreapp2.0\WeatherApp.Web.runtimeconfig.dev.json
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\bin\Debug\netcoreapp2.0\WeatherApp.Web.dll
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\bin\Debug\netcoreapp2.0\WeatherApp.Web.pdb
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\obj\Debug\netcoreapp2.0\WeatherApp.Web.csprojResolveAssemblyReference.cache
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\obj\Debug\netcoreapp2.0\WeatherApp.Web.csproj.CoreCompileInputs.cache
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\obj\Debug\netcoreapp2.0\WeatherApp.Web.AssemblyInfoInputs.cache
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\obj\Debug\netcoreapp2.0\WeatherApp.Web.AssemblyInfo.cs
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\obj\Debug\netcoreapp2.0\WeatherApp.Web.dll
+C:\Data\SourceOnline\WeatherApp\WeatherApp\WeatherApp.Web\obj\Debug\netcoreapp2.0\WeatherApp.Web.pdb
