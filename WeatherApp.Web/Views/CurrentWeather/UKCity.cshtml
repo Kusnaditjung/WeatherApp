@@ -1,0 +1,14 @@
+﻿@model  WeatherApp.Web.Models.UKCityViewModel
+
+<h3> UK Cities</h3>
+
+@{
+    if (Model.WeatherDetails != null)
+    {
+        foreach (var weatherDetail in Model.WeatherDetails)
+        {
+            Html.RenderPartial("_CurrentWeather", weatherDetail);
+        }
+        <div class="CurrentWeatherTerminate"></div>
+    }
+}

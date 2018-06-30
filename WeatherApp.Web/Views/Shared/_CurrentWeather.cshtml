@@ -1,0 +1,73 @@
+﻿@model WeatherApp.Common.WeatherDetail
+    
+<div class="CurrentWeatherTemplate">
+    <div class="CurrentWeatherTop">
+        <div>@Model.Name, @Model.System.Country </div>
+        <div>
+            <span class="lab">Latitude : </span>@Model.Coordinate.Latitude, <span class="lab">Longitude :</span> @Model.Coordinate.Longitude
+        </div>
+    </div>
+    <div class="CurrentWeatherLeft">
+
+        <div>
+            @Model.Main.Temperature&deg;@Model.Main.TemperatureUnit
+        </div>
+        <div>
+            <span class="lab">High :</span> @Model.Main.MaximumTemperature&deg;@Model.Main.TemperatureUnit  <span class="lab">| Low :</span> @Model.Main.MinimumTemperature&deg;@Model.Main.TemperatureUnit
+        </div>
+
+        <div>
+            @Model.LastUpdateDateTime.Date.ToLongDateString()
+        </div>
+        <div>
+            <span class="lab">Sunrise</span> : @Model.System.SunriseDateTime.ToShortTimeString()  <span class="lab">| Sunset</span> : @Model.System.SunsetDateTime.ToShortTimeString()
+        </div>
+
+    </div>
+    <div class="CurrentWeatherRight">
+        <div>
+            <img src="@Model.Weather.First().IconUrl" />   @Model.Weather.First().Main
+        </div>
+        <div>
+            <table>
+                <tr>
+
+                    <td class="lab">Cloudiness</td>
+                    <td>
+
+                        <div class="progress" style="height:20px">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="1"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:@Model.Cloud.All%">
+                                @Model.Cloud.All@Model.Cloud.Unit
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lab">Wind</td>
+                    <td>@Model.Wind.Speed @Model.Wind.SpeedUnit</td>
+                </tr>
+                <tr>
+                    <td class="lab">Pressure</td>
+                    <td>@Model.Main.Pressure @Model.Main.PressureUnit</td>
+                </tr>
+                <tr>
+                    <td class="lab">Humidity</td>
+                    <td>
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="1"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:@Model.Main.Humidity%">
+                                @Model.Main.Humidity@Model.Main.HumidityUnit
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div class="CurrentWeatherTerminate"></div>
+</div>
+

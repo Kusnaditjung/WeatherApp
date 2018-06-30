@@ -1,0 +1,124 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.CurrentWeatherTemplate {
+    background: linear-gradient(white, Lightgray);
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: #337ab7;
+    max-width: 370px;
+    border-radius: 5px;
+    border-width: 2px;
+    float: left;
+    margin-right:20px;
+}
+.SearchBox input:nth-of-type(1) {
+    border-radius: 5px;
+    padding: 2px;
+    color: gray;
+    padding-left: 5px;
+    border-bottom-color: gray;
+    border-right-color: gray;
+}
+
+.SearchBox button:nth-of-type(1) {
+    border-radius: 5px;
+    margin-left:0px;
+}
+
+.CurrentWeatherTop div:nth-of-type(1) {
+    font-size: 32px;
+    color: #337ab7;
+}
+
+.CurrentWeatherTop div:nth-of-type(2) {
+    font-size: 12px;
+}
+
+.CurrentWeatherLeft {
+    float:left;
+    margin-right:10px;
+}
+    
+.CurrentWeatherLeft div:nth-of-type(1) {
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}
+
+.CurrentWeatherLeft div:nth-of-type(2) {
+    font-size: 12px;
+    text-align: center;
+}
+    
+.CurrentWeatherLeft div:nth-of-type(3) {
+    font-size: 20px;
+    color: #337ab7;       
+}
+
+.CurrentWeatherLeft div:nth-of-type(4) {
+    font-size: 12px;
+}
+
+.lab{
+    color:darkslategrey;       
+}
+
+.CurrentWeatherRight {
+    float:left;    
+}
+
+.CurrentWeatherRight table td {    
+    vertical-align:top;
+    padding:0px 2px;
+}
+
+.CurrentWeatherTerminate{
+    clear:left;
+}
+
+.NoResult{
+    margin-top: 20px;
+    color:gray;
+}
+
+.progress{
+    margin-bottom:0px;
+    background-color:lightgray;
+}
+

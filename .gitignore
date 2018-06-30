@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WeatherApp.Common/bin
+/WeatherApp.Common/obj
+/WeatherApp.Service/bin/Debug/netcoreapp2.0
+/WeatherApp.Service/obj
+/WeatherApp.Test/bin
+/WeatherApp.Test/obj
+/WeatherApp.Web/bin
+/WeatherApp.Web/obj

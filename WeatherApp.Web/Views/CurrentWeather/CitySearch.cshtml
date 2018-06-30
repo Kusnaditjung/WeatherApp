@@ -1,0 +1,30 @@
+﻿@model WeatherApp.Web.Models.CitySearchViewModel
+
+<h3> Current Weather</h3>
+
+<form id="formSearch" class="SearchBox" action="/CurrentWeather/CitySearch" method="get">
+    <input type="text" value="@Model.SearchKey" name="searchKey" id="inputData" placeholder="City,[Country]" />
+    <button type="submit" onclick="return document.getElementById('inputData').value !=''"> <span class="glyphicon glyphicon-search"></span>   </button>
+</form>
+<div>
+
+</div>
+
+@{
+    if (!string.IsNullOrWhiteSpace(Model.SearchKey))
+    {
+
+        if (Model.WeatherDetail != null && Model.WeatherDetail.Code == 200)
+        {
+            Html.RenderPartial("_CurrentWeather", Model.WeatherDetail);
+            <div class="CurrentWeatherTerminate"></div>
+        }
+        else
+        {
+            <div class="NoResult">
+                <p> Cannot found the location! Please check the spelling and try again!</p>
+            </div>
+
+        }
+    }
+}
